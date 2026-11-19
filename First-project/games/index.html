@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NEONARCADE</title>
+    <link rel="stylesheet" href="./mm.css">
+</head>
+<style>
+    .leaderboard-container th,
+.leaderboard-container td {
+    text-align: center;
+    padding: 18px 15px;
+}
+
+
+</style>
+<body>
+  <link rel="icon" type="image/png" href="https://play-lh.googleusercontent.com/q-WKiMOariGgYrxI_QOhgRufqUpw7n8fomwYPOG-V-k959WaQk8eK2jka0EoCDPdbS2nOolHwq87Qm-a4H3F=w240-h480-rw">
+
+
+  
+    <!-- طبقة الإضاءة الخلفية -->
+    <div class="glow"></div>
+
+    <!-- 1. الصفحة الرئيسية -->
+    <div id="homePage">
+        <header>
+            <div class="logo play-hover"><span class="cyan">NEON</span><span class="pink">ARCADE</span></div>
+            <nav>
+                <a href="#games" class="play-hover">الألعاب</a>
+                
+                <a href="#m0" class="play-hover">إزاي تنضم</a>
+                <a href="#heroes" class="play-hover">الأبطال</a>
+                <a href="https://chat.whatsapp.com/BYyQ4QQ425kK8aunLf5jkI" class="play-hover">الجروب</a>
+
+            </nav>
+            <div class="auth-btns">
+               <a href="#log in"><button class="btn-login" >Log in</button></a> 
+                <button class="btn-cyan">اشترك</button>
+            </div>
+        </header>
+
+        <div class="main">
+            <!-- الجزء اليمين: الترحيب والإحصائيات -->
+            <div>
+                <span class="cyan play-hover">🎮 موسم 2026 بدأ!</span>
+                <h1 class="play-hover" style="font-size: 42px;">العب. اتعلم. <span class="pink">اكسب.</span></h1>
+                <p style="color: #ccc; font-size: 18px;">أكبر نادي ألعاب للأبطال الصغيرين. تحديات كل أسبوع، وجوايز، وأصحاب جداد.</p>
+
+                <button style="background-color: #afe2fffa;" class="btn-cyan play-hover">ابدأ اللعب ◀</button>
+                <a href="#games" class="btn-pink play-hover">اعرف أكتر</a>
+
+                <div class="stats">
+                    <div>
+                        <h3 class="yellow" style="margin: 0; font-size: 24px;">120+</h3>
+                        <p style="margin: 5px 0 0;">لعبة</p>
+                    </div>
+                    <div>
+                        <h3 class="yellow" style="margin: 0; font-size: 24px;">5K+</h3>
+                        <p style="margin: 5px 0 0;">لاعب</p>
+                    </div>
+                    <div>
+                        <h3 class="yellow" style="margin: 0; font-size: 24px;">24/7</h3>
+                        <p style="margin: 5px 0 0;">أونلاين</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- الجزء الشمال (في الجنب): شاشة اللعبة -->
+            <div class="game-box">
+                <div class="grid">
+                    <div></div>
+                    <div class="box bg-cyan"></div>
+                    <div></div>
+                    <div class="box bg-cyan"></div>
+                    <div></div>
+                    <div class="box bg-cyan"></div>
+                    <div class="box bg-pink"></div>
+                    <div class="box bg-cyan"></div>
+                    <div class="box bg-pink"></div>
+                    <div class="box bg-cyan"></div>
+                    <div class="box bg-cyan"></div>
+                    <div class="box bg-cyan"></div>
+                    <div class="box bg-cyan"></div>
+                    <div class="box bg-cyan"></div>
+                    <div class="box bg-cyan"></div>
+                    <div class="box bg-yellow"></div>
+                    <div></div>
+                    <div class="box bg-yellow"></div>
+                    <div></div>
+                    <div class="box bg-yellow"></div>
+                </div>
+                <small style="color: #aaa; letter-spacing: 1px;">LEVEL 07 — SCORE 9,450</small>
+            </div>
+        </div>
+<br><br><br><br><br><br>
+
+        <h2 id="games" class="section-title" style="margin-top: 100px;">الألعاب <span class="cyan">الأكثر لعباً</span></h2>
+
+        <div class="cards-grid">
+            <!-- الكارت الأول: حرب النجوم الصغيرة -->
+            <div class="game-card">
+                <div class="card-banner grad-pink" style="  justify-content: center; align-items: center; display: flex;  background: linear-gradient(135deg,  ,#1b1f6b, #1b1f6b, #FF00FF);">🚀</div>
+                <div class="card-body">
+                    <span class="tag">أكشن</span>
+                    <h3>حرب النجوم الصغيرة</h3>
+                    <p>دافع عن كوكبك من الغزاة في معارك سريعة.</p>
+                    <div class="card-footer">
+                        <span class="stars">★★★★★</span>
+                        <a href="#" class="btn-play-sm">العب</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- الكارت الثاني: متاهة الألغاز -->
+            <div class="game-card">
+                <div class="card-banner grad-green"  style=" justify-content: center; align-items: center; display: flex;      background: linear-gradient(135deg, #065841, #05F49A);" >🧩</div>
+                <div class="card-body">
+                    <span class="tag">ألغاز</span>
+                    <h3>متاهة الألغاز</h3>
+                    <p>حُل الألغاز وافتح الأبواب السرية قبل ما الوقت يخلص.</p>
+                    <div class="card-footer">
+                        <span class="stars">★★★★☆</span>
+                        <a href="#" class="btn-play-sm">العب</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- الكارت الثالث: سباق النيون -->
+            <div class="game-card">
+                <div class="card-banner grad-yellow"       style="  justify-content: center; align-items: center; display: flex;  background: linear-gradient(135deg, #552A01, #E3D008, #E3D008);
+"" >🏎️</div>
+                <div class="card-body">
+                    <span class="tag">سباق</span>
+                    <h3>سباق النيون</h3>
+                    <p>سابق أصحابك في شوارع منوّرة بأسرع العربيات.</p>
+                    <div class="card-footer">
+                        <span class="stars">★★★★★</span>
+                        <a href="#" class="btn-play-sm">العب</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+  
+
+
+        </div>
+
+    </div>
+
+    <br><br id="heroes">
+        <h2 id="games" class="section-title" style="margin-top: 100px;  ">لوحة الأبطال <span class="cyan"> المتميزين</span></h2>
+
+<br>
+</head>
+<body>
+
+<div   class="leaderboard-container">
+  <table dir="rtl">
+    <thead>
+      <tr>
+        <th>المركز</th>
+        <th>اللاعب</th>
+        <th>الفلوس</th>
+        <th>المستوى</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr class="first-place">
+        <td style="background-color:#E3D008 ;" >  🥇 1</td>
+        <td style="background-color:#E3D008 ;" >محمد</td>
+        <td style="background-color:#E3D008 ;" class="points">🔥900,800</td>
+        <td style="background-color:#E3D008 ;" >  🔥80🔥</td>
+      </tr>
+      <tr>
+        <td>🥈 2</td>
+        <td>مريم</td>
+        <td class="points">11,450</td>
+        <td>29</td>
+      </tr>
+      <tr>
+        <td>🥉 3</td>
+        <td>علي</td>
+        <td class="points">9,450</td>
+        <td>27</td>
+      </tr>
+      <tr>
+        <td>4</td>
+        <td>سلمى</td>
+        <td class="points">8,120</td>
+        <td>24</td>
+      </tr>
+      <tr>
+        <td>5</td>
+        <td>عمر</td>
+        <td class="points">7,900</td>
+        <td>22</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+<br><br><br><br><br><br><br>
+<br><br><br><br><br><br><br>
+<gg id="m0" ></gg>
+<section class="how-to-join">
+  <h2>إزاي تنضم؟</h2>
+  <div class="gradient-line"></div>
+  <p class="subtitle">٣ خطوات بس وتبقى معانا</p>
+
+  <div class="cards-container">
+    
+    <!-- الخطوة 01 -->
+    <div class="step-card">
+      <div class="card-header">
+        <span class="step-icon">📝</span>
+        <span class="step-number">01</span>
+      </div>
+      <h3>اعمل حساب</h3>
+      <p>سجّل باسمك وإيميل بابا أو ماما.</p>
+    </div>
+
+    <!-- الخطوة 02 -->
+    <div class="step-card">
+      <div class="card-header">
+        <span class="step-icon">🎯</span>
+        <span class="step-number">02</span>
+      </div>
+      <h3>اختار لعبتك</h3>
+      <p>جرّب أي لعبة من أكتر من ١٢٠ لعبة.</p>
+    </div>
+
+    <!-- الخطوة 03 -->
+    <div class="step-card">
+      <div class="card-header">
+        <span class="step-icon">🏆</span>
+        <span class="step-number">03</span>
+      </div>
+      <h3>اكسب الجوايز</h3>
+      <p>جمّع نقط واطلع في لوحة الأبطال.</p>
+    </div>
+
+  </div>
+</section>
+<br><br><br><br><br><br><br>
+<br><br><br><br><br><br><br>
+<br><br><br><br><br><br><br>
+<br><br><br><br><br><br><br>
+
+
+<br><br><br><br><br><br><br>
+<form id="log in" action="../moo.html" style="background: linear-gradient(#220E2C,#0B252C); text-align: center; padding: 30px; color: white;">
+    
+    <h1 id="games" class="section-title" style="margin-top: 20px;">جاهز تبقي بطل <span class="cyan"></span></h1>
+    <h4 class="section-title" style="margin-top: 15px;">سجل دخول بأسمك واي بسورد وعمرك <span class="cyan"></span></h4>
+    <br id="Log in" >
+
+    <input type="text" name="name" placeholder="اكتب اسمك" required style="    width: 20%;   text-align: center; background-color: #000; color: white; margin-bottom: 10px; padding: 8px;"><br>
+    <input type="text" placeholder="اكتب عمرك" min="3" max="90" name="ig" required style=" width: 20%;     text-align: center; background-color: #000; color: white; margin-bottom: 10px; padding: 8px;"><br>
+    <input type="password" name="password" id="password" placeholder="اكتب البسورد" required style="  width: 20%;  text-align: center; background-color: #000; color: white; margin-bottom: 10px; padding: 8px;"><br>
+    <input type="submit" value="تسجيل الدخول" style=" width: 200px;   text-align: center; background-color: #0015d1; color: white; padding: 10px 20px; cursor: pointer;">
+
+
+  </form>
+
+<form  style="background-color: #121218;   "  >
+
+  <div ><span class="cyan">NEON</span><span class="pink">ARCADE</span></div>
+  <a>نادي ألعاب آمن ومُسلّي للأبطال الصغيرين.</a>
+  
+  <h4>تابعنا </h4>
+  <hr>
+<h5>يوتيوب</h5>
+<h5>ديسكورد</h5>
+
+</form>
+
+
+</body>
+
+</html>
