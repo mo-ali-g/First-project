@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>  CSS</title>
+    <style>
+        body {
+            background-image: url("https://www.milesweb.ae/blog/wp-content/uploads/2025/06/what-is-css.png");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-attachment: fixed;
+            min-height: 100vh;
+            margin: 0;
+            padding: 30px 15px;
+            color: #ffffff;
+            display: flex;
+            justify-content: center;
+        }
+ 
+        .container {
+            background-color: rgba(10, 10, 10, 0.9);
+            max-width: 850px;
+            width: 100%;
+            padding: 30px;
+            border-radius: 12px;
+            border-top: 5px solid #264de4;
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.7);
+        }
+
+        h1 {
+            color: #2965f1;
+            text-align: center;
+            margin-top: 0;
+        }
+
+        h2 {
+            color: #4da6ff;
+            font-size: 1.2rem;
+            border-bottom: 1px solid #333;
+            padding-bottom: 6px;
+            margin-top: 25px;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+            display: grid;
+            gap: 10px;
+        }
+
+        li {
+            background-color: #1a1a1a;
+            padding: 10px 12px;
+            border-radius: 6px;
+            border-right: 3px solid #264de4;
+        }
+
+        code {
+            background-color: #2b2b2b;
+            color: #4da6ff;
+            padding: 2px 6px;
+            border-radius: 5px;
+            direction: ltr;
+            display: inline-block;
+        }
+
+</style>
+
+</head>
+<body>
+
+<nav>
+    <a class="py" style="background-color: #26e426; color: #ffffff;  "    href="./akoad.html">Python 🐍</a><br>
+    <a class="html"  style="background-color: chocolate;  color: white;  "       href="./html.html">HTML 🌐</a><br>
+    <a class="css"  style="background-color: #2965f1; color: white;  "    href="./css.html">CSS 🎨</a><br>
+    <a class="html"  style="background-color: chocolate;  color: white;  "       href="./html.html"></a><br>
+  <a  id="app" style="background-color: rgb(255, 210, 128);" href="">JavaScript⚡ </a>
+
+  </nav>
+
+
+    <div class="container">
+        <h1>أهم خصائص (Properties) لغة CSS</h1>
+
+        </ul>
+
+        <h2> الألوان والخلفيات (Colors & Backgrounds)</h2>
+        <ul>
+            <li><code>color: white;</code> : تغيير لون النص والكتابة.</li>
+            <li><code>background-color: black;</code> : تغيير لون خلفية العنصر أو الصفحة.</li>
+            <li><code>background-image: url("bg.jpg");</code> : وضع صورة كخلفية للعنصر.</li>
+            <li><code>background-size: cover;</code> : جعل صورة الخلفية تغطي المساحة بالكامل.</li>
+            <li><code>opacity: 0.8;</code> : التحكم في درجة شفافية العنصر (من 0 إلى 1).</li>
+        </ul>
+
+        <h2> تنسيق النصوص والخطوط (Text & Fonts)</h2>
+        <ul>
+            <li><code>font-size: 20px;</code> : تحديد حجم الخط.</li>
+            <li><code>font-family: Arial, sans-serif;</code> : اختيار نوع الخط.</li>
+            <li><code>font-weight: bold;</code> : جعل الخط عريضاً وسميكاً.</li>
+            <li><code>text-align: center;</code> : محاذاة النص في المنتصف (أو <code>right</code> و <code>left</code>).</li>
+            <li><code>text-decoration: none;</code> : إزالة الخط السفلي من الروابط.</li>
+        </ul>
+
+        <h2> الصناديق والحدود والمسافات (Box Model)</h2>
+        <ul>
+            <li><code>width</code> / <code>height</code> : تحديد عرض وارتفاع العنصر.</li>
+            <li><code>padding: 15px;</code> : المسافة الداخلية بين المحتوى وإطار الصندوق.</li>
+            <li><code>margin: 20px;</code> : المسافة الخارجية بين الصندوق والعناصر المجاورة.</li>
+            <li><code>border: 2px solid blue;</code> : رسم إطار ملون حول العنصر.</li>
+            <li><code>border-radius: 12px;</code> : جعل زوايا الصندوق دائرية وناعمة.</li>
+        </ul>
+
+        <h2> ترتيب وتوزيع العناصر (Layout & Flexbox)</h2>
+        <ul>
+            <li><code>display: flex;</code> : تفعيل الصندوق المرن لترتيب العناصر بجانب بعضها.</li>
+            <li><code>justify-content: center;</code> : محاذاة العناصر أفقياً في المنتصف.</li>
+            <li><code>align-items: center;</code> : محاذاة العناصر عمودياً في المنتصف.</li>
+            <li><code>display: grid;</code> : تقسيم العناصر إلى شبكة من الصفوف والأعمدة.</li>
+            <li><code>gap: 10px;</code> : ترك مسافة متساوية بين العناصر المتجاورة.</li>
+        </ul>
+
+
+    </div>
+<script src="../javascript/app.js" ></script>
+</body>
+</html>

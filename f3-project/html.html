@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>دليل وسوم HTML5 الشامل</title>
+    <style>
+        body {
+            background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTU3sRU6CPl8IQHx6U6kf9Q9f9YEpxcYDAzoNZQOeM-abIAIt26u_kcejL0Rn3bQSxWNwP9lKLHiCq8L6kk4w7crz_goNdPYOKzCCXLZyphmQ&s=10");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-attachment: fixed;
+            min-height: 100vh;
+            margin: 0;
+            padding: 30px 15px;
+            color: #ffffff;
+            display: flex;
+            justify-content: center;
+        }
+
+        .container {
+            background-color: rgba(10, 10, 10, 0.9);
+            max-width: 850px;
+            width: 100%;
+            padding: 30px;
+            border-radius: 12px;
+            border-top: 5px solid #e34f26;
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.7);
+        }
+
+        h1 {
+            color: #e34f26;
+            text-align: center;
+            margin-top: 0;
+        }
+
+        h2 {
+            color: #f06529;
+            font-size: 1.2rem;
+            border-bottom: 1px solid #333;
+            padding-bottom: 6px;
+            margin-top: 25px;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+            display: grid;
+                gap: 10px;
+        }
+
+
+
+
+
+
+
+
+
+
+
+        li {
+            background-color: #1a1a1a;
+            padding: 10px 12px;
+            border-radius: 6px;
+            border-right: 3px solid #e34f26;
+        }
+
+        code {
+            background-color: #2b2b2b;
+            color: #ff9800;
+            padding: 2px 6px;
+            border-radius: 5px;
+
+        }
+    </style>
+</head>
+<body>
+
+<nav>
+    <a class="py" style="background-color: #26e426; color: #ffffff;  "    href="./akoad.html">Python 🐍</a><br>
+    <a class="html"  style="background-color: chocolate;  color: white;  "       href="./html.html">HTML 🌐</a><br>
+    <a class="css"  style="background-color: #2965f1; color: white;  "    href="./css.html">CSS 🎨</a><br>
+    <a class="html"  style="background-color: chocolate;  color: white;  "       href="./html.html"></a><br>
+  <a  id="app" style="background-color: rgb(255, 210, 128);" href="">JavaScript⚡ </a>
+
+  </nav>
+
+    <div class="container">
+        <h1>أهم وسوم (Tags) لغة HTML5</h1>
+
+        <h2>1. الهيكل الأساسي للصفحة</h2>
+        <ul>
+            <li><code>&lt;!DOCTYPE html&gt;</code> : تعريف نوع المستند كـ HTML5.</li>
+            <li><code>&lt;html&gt;</code> : الوسم الجذري الذي يحتوي على كل الصفحة.</li>
+            <li><code>&lt;head&gt;</code> : يحتوي على إعدادات الصفحة والعنوان والروابط.</li>
+            <li><code>&lt;title&gt;</code> : عنوان الصفحة الذي يظهر في تبويب المتصفح.</li>
+            <li><code>&lt;body&gt;</code> : يحتوي على كل المحتوى المرئي للمستخدم.</li>
+            <li><code>&lt;meta&gt;</code> : لتحديد الترميز ووصف الصفحة لمحركات البحث.</li>
+        </ul>
+
+        <h2>2. النصوص والعناوين</h2>
+        <ul>
+            <li><code>&lt;h1&gt;</code> - <code>&lt;h6&gt;</code> : العناوين من الأكبر للأصغر.</li>
+            <li><code>&lt;p&gt;</code> : فقرة نصية عادية.</li>
+            <li><code>&lt;strong&gt;</code> : نص عريض (Bold) ذو أهمية.</li>
+            <li><code>&lt;em&gt;</code> : نص مائل (Italic) للتأكيد.</li>
+            <li><code>&lt;mark&gt;</code> : تظليل النص باللون الأصفر.</li>
+            <li><code>&lt;br&gt;</code> : النزول إلى سطر جديد.</li>
+            <li><code>&lt;hr&gt;</code> : رسم خط أفقي فاصل.</li>
+            <li><code>&lt;span&gt;</code> : تحديد جزء صغير من النص لتنسيقه.</li>
+        </ul>
+
+        <h2>3. الروابط والوسائط</h2>
+        <ul>
+            <li><code>&lt;a&gt;</code> : رابط تشعبي للانتقال لصفحة أخرى.</li>
+            <li><code>&lt;img&gt;</code> : إدراج صورة.</li>
+            <li><code>&lt;video&gt;</code> : تشغيل ملف فيديو.</li>
+            <li><code>&lt;audio&gt;</code> : تشغيل ملف صوتي.</li>
+            <li><code>&lt;iframe&gt;</code> : تضمين صفحة ويب أو فيديو يوتيوب.</li>
+        </ul>
+
+        <h2>4. القوائم والجداول</h2>
+        <ul>
+            <li><code>&lt;ul&gt;</code> : قائمة غير مرتبة (نقطية).</li>
+            <li><code>&lt;ol&gt;</code> : قائمة مرتبة (مرقمة).</li>
+            <li><code>&lt;li&gt;</code> : عنصر داخل القائمة.</li>
+            <li><code>&lt;table&gt;</code> : إنشاء جدول.</li>
+            <li><code>&lt;tr&gt;</code> : صف داخل الجدول.</li>
+            <li><code>&lt;th&gt;</code> : خلية عنوان في الجدول.</li>
+            <li><code>&lt;td&gt;</code> : خلية بيانات في الجدول.</li>
+        </ul>
+
+        <h2>5. النماذج (Forms) والإدخال</h2>
+        <ul>
+            <li><code>&lt;form&gt;</code> : حاوية لجمع بيانات المستخدم.</li>
+            <li><code>&lt;input&gt;</code> : حقل إدخال (نص، كلمة مرور، إيميل، إلخ).</li>
+            <li><code>&lt;textarea&gt;</code> : مربع نص كبير للرسائل الطويلة.</li>
+            <li><code>&lt;button&gt;</code> : زر قابل للضغط.</li>
+            <li><code>&lt;select&gt;</code> : قائمة منسدلة للاختيار.</li>
+            <li><code>&lt;option&gt;</code> : خيار داخل القائمة المنسدلة.</li>
+            <li><code>&lt;label&gt;</code> : عنوان توضيحي لحقل الإدخال.</li>
+        </ul>
+
+        <h2>6. وسوم التقسيم الدلالية (Semantic HTML5)</h2>
+        <ul>
+            <li><code>&lt;div&gt;</code> : حاوية عامة لتقسيم العناصر.</li>
+            <li><code>&lt;header&gt;</code> : رأس الصفحة أو القسم.</li>
+            <li><code>&lt;nav&gt;</code> : شريط التنقل والقوائم الرئيسية.</li>
+            <li><code>&lt;main&gt;</code> : المحتوى الرئيسي للصفحة.</li>
+            <li><code>&lt;section&gt;</code> : قسم مستقل داخل الصفحة.</li>
+            <li><code>&lt;article&gt;</code> : مقال أو محتوى منفصل.</li>
+            <li><code>&lt;aside&gt;</code> : شريط جانبي.</li>
+            <li><code>&lt;footer&gt;</code> : تذييل الصفحة (أسفل الموقع).</li>
+        </ul>
+    </div>
+<script src="../javascript/app.js" ></script>
+</body>
+</html>

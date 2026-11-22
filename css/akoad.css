@@ -1,0 +1,62 @@
+body {
+    background-color: #0D3054;
+    color: #fff;
+    padding: 20px;
+}
+
+h1, h3 {
+    text-align: center;
+    transition: background-color 1s ease;
+        border-radius: 8px;
+
+}
+
+h1:hover {
+    color: #ffffff;
+    background-color: #000000;
+    border-radius: 8px;
+}
+
+hr {
+    border: 0.5px solid #555;
+
+}
+
+.section-setting {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; 
+
+}
+
+.section-code, .section-explain {
+    width: 350px;
+    background-color: #1e1e1e;
+    padding: 11px;
+}
+
+.section-explain {
+    background-color: #000000; }
+input[type="text"] {
+    width: 90%;
+    padding: 8px;
+    border: 1px solid #555;
+  
+}
+
+code {
+    color: #4af626;
+}
+
+span{
+    color: red;
+}
+#img{
+ 
+      background-image: url("https://play-lh.googleusercontent.com/RVu3ht5KdQzAlbJir-QxjzlUb0zYjm2o7Q2lpaDTPm2aQClJQLf_l_Vn6J_UQ6RX-Rl8pNfZsDUK6WGOmaCndhY=w240-h480-rw"); 
+      background-size: cover;             
+      background-repeat: no-repeat;      
+      min-height: 100vh;                
+    color: #ffffff;
+    }
+
