@@ -11,15 +11,24 @@
 <body>
 
     <!-- الشريط العلوي (Navbar) -->
-    <header class="navbar"  >
+    <header class="navbar">
         <a href="#" class="logo">محمد <b>علي</b></a>
         <nav class="nav-links">
             <a href="#home">الرئيسية</a>
+            
             <a href="#about">من أنا</a>
+            
             <a href="#services">خدماتي</a>
+            
+            <a href="#money">شراء</a>
+
             <a href="#projects">أعمالي</a>
+            
             <a href="#contact">تواصل معي</a>
-            <a href="https://alidevhub.com/" target="_blank" rel="noopener noreferrer">موقع علي</a>
+            
+            <a href="./Support.html">الدعم الفني </a>
+
+            <a href="https://alidevhub.com" target="_blank" rel="noopener noreferrer">موقع علي</a>
         </nav>
     </header>
 
@@ -65,8 +74,8 @@
     </section>
 
     <!-- قسم الخدمات (Services) -->
-    <section id="services" class="section">
-        <h2 class="section-title">ما الذي <b>أقدمه</b></h2>
+    <section id="services" class="section"  >
+        <h2 class="section-title">ما الذي <b>أقدمه</b></h2><br id="money"  >
         <div class="grid-3">
             <div class="card">
                 <h3>تصميم الواجهات (UI/UX)</h3>
@@ -81,10 +90,15 @@
                 <p>تسريع المواقع الحالية وتحسين ظهورها في محركات البحث لضمان أفضل تجربة.</p>
             </div>
         </div>
+
+        <div id="money" class="money" style="text-align: center; margin-top: 30px;">
+            <a href="./money.html" class="btn-primary" style="background-color: black; color: white; margin: 0 5px;">🗿باقة فضية</a>
+            <a href="./money.html" class="btn-primary" style="background-color: black; color: white; margin: 0 5px;">🪎باقة ذهبية</a>
+        </div>
     </section>
 
     <!-- قسم الأعمال (Projects) -->
-    <section id="ll" class="section">
+    <section id="projects" class="section">
         <h2 class="section-title">أحدث <b>أعمالي</b></h2>
         <div class="grid-3">
             <div class="project-card">
@@ -95,7 +109,7 @@
                     <h3>موقع ألعاب</h3>
                 </div>
             </div>
-            <div class="project-card">
+            <div  class="project-card">
                 <a href="./f2-project/roaa.html" target="_blank" rel="noopener noreferrer" style="text-decoration: none;">
                     <div class="project-img">المشروع الثاني</div>
                 </a>
@@ -115,12 +129,12 @@
     </section>
 
     <!-- قسم التواصل (Contact) -->
-    <section id="contact" class="section">
+    <section  id="contact" class="section"  >
         <h2 class="section-title">تواصل <b>معي</b></h2>
-        <form class="contact-form" id="contactForm">
-            <input type="text" placeholder="الاسم بالكامل" required>
-            <input type="email" placeholder="البريد الإلكتروني" required>
-            <textarea rows="5" placeholder="اكتب رسالتك هنا..." required></textarea>
+        <form action="https://mo-ali-g.github.io/First-project/#services"  class="contact-form" id="contactForm">
+            <input type="text" name="name" placeholder="الاسم بالكامل" required>
+            <input type="email" name="email" placeholder="البريد الإلكتروني" required>
+            <textarea name="message" rows="5" placeholder="اكتب رسالتك هنا..." required></textarea>
             <button type="submit" class="btn-primary">إرسال الرسالة</button>
         </form>
     </section>

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Support</title>
+    <link rel="stylesheet" href="./css/Support.css">
+</head>
+<body>
+
+    <div class="agents">
+        
+        <div class="agent-card">
+            <img style="    border-radius: 333px;
+"  src="https://www.aristoteliansociety.org.uk/wp-content/uploads/2013/03/AS-Logo.jpg" width="100"  alt="">
+            <h4>أحمد صلاح</h4>
+            <span class="status offline" style="color: red;">🔴 غير متصل</span>
+            <p style="color: rgb(231, 0, 0);">آخر ظهور الساعة 9:14</p>
+        </div>
+        
+        <div class="agent-card">
+            <img  style="    border-radius: 333px;
+"  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRd1tkVDpYAU4fy36s6pZy2Rr_nNXRJhmScz8SFQP_HLMO0O89rrmLUvNA&s=10" alt="" width="70"  >
+            <h4>محمود الجندي </h4>
+            <span class="status">متصل</span>
+            <p>متاح</p>
+        </div>
+
+        <div class="agent-card">
+            <img style="    border-radius: 333%;
+" src="https://thumbs.dreamstime.com/b/em-logo-monogram-slash-style-design-template-173931934.jpg" width="100" alt=".">
+            
+            <h4>يوسف محمد</h4>
+            <span class="status">متصل</span>
+            <p>متاح</p>
+        </div>
+
+        <div class="agent-card">
+            <img style="    border-radius: 333px;  bottom: 11px; 
+"  src="https://mmg.whatsapp.net/m1/v/t24/AQP24VbwBeVaS-ylytrgBvFEifoJyW2NafG290Mu1WqNXwBhxsJGh8Szb9RGymPQuDByRSSbL60x5RIYO7Pd7dOhXO2kPwC2y2sQb22m_qOghGGeOggpfXGNWaFz?stp=s810x1080_tt6&ccb=10-5&oh=01_Q5Aa6AFEMhl5TDVpaBSAfqD4RcToGTsHslcYeh-8W3JLuO5sww&oe=6B2D2AA9&_nc_sid=e3bc14" width="60"  height="50"  alt="bot">
+            <h4>Meta AI</h4>
+            <span class="status">متصل</span>
+            <p>متاح في اي وقت</p>
+        </div>
+
+        <!-- تم إدخال بطاقة محمد علي داخل حاوية agents -->
+        <div class="agent-card">
+            <img style="    border-radius: 333px;
+"  src="https://3cschool.net/getDefaultAvatar?item=17726&name=Mohamed%20Ali%20Gamal&size=80" alt=".">
+
+            <h4> محمد علي جمال  </h4>
+            <span class="status offline" style="color: red;">🔴 غير متصل</span>
+            <p style="color: rgb(231, 0, 0);">آخر ظهور الساعة 1:22</p>
+        </div>
+    </div>
+
+
+
+
+<section>
+    
+    <h3>مرحبا</h3>
+    
+<h3 id="e3"  > اكتب المشكلة </h3>
+
+
+
+
+
+
+<button type="button" >اضغط للكتابة </button>
+<a href="./index.html"><button id="button" type="button" style="background-color:#0f0f0f00 ; color: #0f0f0f00;  " >خروج</button></a>
+
+
+
+
+</section>
+
+<script>
+
+document.querySelector("button").addEventListener("click", function () {
+    document.querySelector("h3").style.color = "#040B1A"; 
+    document.querySelector("#e3").style.color = "#040B1A"; 
+});
+
+document.querySelector("button").addEventListener("click", function () {
+    document.querySelector("button").style.background = "#040B1A";    
+    document.querySelector("button").style.color = "#040B1A"; 
+    document.querySelector("#button").style.color = "#000"; 
+    document.querySelector("#button").style.background = "#fff"; 
+    let m = prompt("ما المشكلة ","اكتب المشكلا");
+    if (m ==="اكتب المشكلا" ){
+        alert("اكتب بجد")
+        alert("روح افتحو تاني ")
+         
+        location.href = "./index.html";
+
+    }
+    
+
+
+    if (m ===''){
+        alert("اكتب بجد")
+        alert("روح افتحو تاني ")
+         
+        location.href = "./index.html";
+
+    }
+
+
+alert(m +"  سنعمل على تحسينه ");
+});
+
+</script>
+</body>
+</html>

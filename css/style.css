@@ -304,5 +304,5 @@ body{
   animation: float 1s ease-in-out infinite;  /* الاسم · المدة · النعومة · كرر للأبد */
 }
 @keyframes float {
-  50% { transform: translateY(-12px); }        /* النص: فوق */
+  50% { transform: translateY(-20px); }        /* النص: فوق */
 }
