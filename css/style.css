@@ -306,3 +306,15 @@ body{
 @keyframes float {
   50% { transform: translateY(-20px); }        /* النص: فوق */
 }
+
+
+@media (max-width: 768px) {
+  
+  nav{
+    gap: 1px;
+    background-color: #070a1200;
+    color: #070a1200;
+  }
+
+
+}
