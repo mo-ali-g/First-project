@@ -5,15 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>NEONARCADE</title>
-    <link rel="stylesheet" href='/css/style2.css'>
-</head>
+<link rel="stylesheet" href="./index.css"></head>
 <style>
-    .leaderboard-container th,
-.leaderboard-container td {
-    text-align: center;
-    padding: 18px 15px;
-}
-
 
 </style>
 <body>
@@ -251,7 +244,7 @@
 
 
 <br><br><br><br><br><br><br>
-<form id="log in"  style="background: linear-gradient(#220E2C,#0B252C); text-align: center; padding: 30px; color: white;">
+<form action="./games.html"  id="log in"  style="background: linear-gradient(#220E2C,#0B252C); text-align: center; padding: 30px; color: white;">
     
     <h1 id="games" class="section-title" style="margin-top: 20px;">جاهز تبقي بطل <span class="cyan"></span></h1>
     <h4 class="section-title" style="margin-top: 15px;">سجل دخول بأسمك واي بسورد وعمرك <span class="cyan"></span></h4>
@@ -280,4 +273,23 @@
 
 </body>
 
+  <script>
+    document.querySelector("#sun").addEventListener("click", function () {
+      document.body.style.background = "#FEDE57";
+    });
+
+    document.querySelector("#moon").addEventListener("click", function () {
+      document.body.style.background = "#171520";
+
+    });
+document.querySelector("#w0").addEventListener("click", function () {
+  alert('لقد امسكت بيه');
+  document.querySelector('#zz').style.color = 'red';
+  document.querySelector('#zz').style.background = 'black  ';
+  document.querySelector('#m').style.color = '#FFFFFF';
+
+  document.querySelector('#w0').style.color = '#FFFFFF';
+});
+
+  </script>
 </html>

@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./the_games.css">
+    <title>NEONARCADE</title>
+    <style>
+        @media (max-width: 600px) {
+            body {
+                grid-template-columns: 1fr; 
+                background-color: rgb(43, 183, 226);  
+            }
+        }
+
+    body {
+      background-image: url("https://thumbs.dreamstime.com/b/futuristic-ai-processor-cube-neon-cyberpunk-circuit-board-futuristic-ai-processor-cube-neon-cyberpunk-circuit-board-444329155.jpgc");
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+     min-height: 100vh;
+    }
+        
+
+
+
+
+
+
+
+        @media (max-width: 600px) {
+            body {
+      background-image: url("https://images.stockcake.com/public/f/b/2/fb260441-2e83-4336-8ff1-88e929d4ec33_large/neon-data-core-stockcake.jpg");
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      min-height: 100vh;
+            }
+        }
+
+        
+
+
+
+
+
+
+
+
+    /* الصندوق اللي هيحبس الشبح جواه */
+        .ghost-arena {
+            position: relative; /* دي اللي بتخلي الشبح ميهربش بره الصندوق */
+            height: 250px;
+            width: 100%;
+            border: 2px dashed #00ffcc;
+            border-radius: 12px;
+            overflow: hidden;
+            margin-top: 15px;
+        }
+
+        .ghost {
+            position: absolute;
+            font-size: 42px;
+            cursor: pointer;
+            user-select: none;
+            animation: moveGhost 1.5s infinite alternate ease-in-out;
+        }
+
+        @keyframes moveGhost {
+            0%   { top: 1px;  right: 2923px; }
+            33%  { top: 140px; right: 160px; }
+            66%  { top: 30px;  right: 660px; }
+            100% { top: 180px; right: 3220px; }
+        }
+
+        /* إخفاء الشبح وإظهار رسالة الفوز لما تضغط عليه */
+
+    </style>
+</head>
+<body>
+<form>
+    <!-- اللعبة الأولى -->
+    <h1>🕵️‍♂️ اللعبة 1: ابحث عن الوجه المختلف</h1>
+    <p>اضغط على الوجه المختلف وسط الوجوه المتشابهة:</p>
+    <hr />
+    
+    <dialog id="box-world" closedby="any">
+        <details open>
+            <summary>إعدادات world</summary>
+            <div class="stage"></div>
+        </details>
+    </dialog>
+
+    <details>
+        <summary>التحدي </summary>
+
+        <table>
+            <tr><td>😀</td><td>😀</td><td>😀</td><td>😀</td><td>😀</td></tr>
+            <tr><td>😀</td><td>😀</td><td>😀</td><td>😀</td><td>😀</td></tr>
+            <tr><td>😀</td><td>😀</td><td>😀</td><td>😀</td><td>😀</td></tr>
+            <tr><td>😀</td><td>😀</td><td>😀</td><td>😀</td><td>😀</td></tr>
+            <tr><td>😀</td><td>😀</td><td>😀</td><td>😀</td><td>😀</td></tr>
+            <tr><td>😀</td><td>😀</td><td>😀</td><td>😀</td><td>😀</td></tr>
+            <tr><td>😀</td><td>😀</td><td>😀</td><td>😀</td><td>😀</td></tr>
+            <tr><td>😀</td><td>😀</td><td>😀</td><td>😀</td><td>😀</td></tr>
+            <tr><td>😀</td><td>😀</td><td>😀</td><td>😀</td><td>😀</td></tr>
+            <tr><td>😀</td><td>😀</td><td>😀</td><td>😀</td><td>😀</td></tr>
+            <tr><td>😀</td><td>😀</td><td>😀</td><td>😀</td><td>😀</td></tr>
+            <tr><td>😀</td><td>😀</td><td>😀</td><td>😀</td><td>😀</td></tr>
+            <tr><td>😀</td><td>😀</td><td>😀</td><td>😀</td><td>😀</td></tr>
+            <tr><td>😀</td><td>😀</td><td>😀</td><td>😀</td><td>😀</td></tr>
+            <tr>
+                <td>😀</td>
+                <td>😀</td>
+                <td>
+                    <details>
+                        <summary>🫠</summary>
+                        <small class="win"><b>معاك المفتاح 🗝️</b></small>
+                    </details>
+                </td>
+                <td>😀</td>
+                <td>😀</td>
+            </tr>
+            <tr><td>😀</td><td>😀</td><td>😀</td><td>😀</td><td>😀</td></tr>
+            <tr><td>😀</td><td>😀</td><td>😀</td><td>😀</td><td>😀</td></tr>
+        </table>
+
+        <hr />
+
+        <!-- اللعبة الثانية -->
+        <h1>🏰 اللعبة 2: قلعة الألغاز الصعبة 🗝️</h1>
+        <p>اختار الباب الصحيح في كل مرة عشان توصل للكنز!</p>
+
+        <div class="box">
+            <p style="color: black;">المرحلة 1: قدامك 3 أبواب، واحد بس بيفتح:</p>
+
+            <details>
+                <summary>🚪 الباب الأحمر</summary>
+                <p class="lose">💥 فخ! وقع عليك مياه، جرب باب تاني.</p>
+            </details>
+
+            <details>
+                <summary>🚪 الباب الأزرق</summary>
+                <p class="win">👏 برافو! عديت للمرحلة 2:</p>
+                <p>لغز سريع: كام رجل للعنكبوت؟ 🕷️</p>
+
+                <details>
+                    <summary>6 أرجل</summary>
+                    <p class="lose">❌ غلط! دي النملة، فكر تاني.</p>
+                </details>
+
+                <details>
+                    <summary>8 أرجل</summary>
+                    <p class="win">🔥 ممتاز! وصلت للمرحلة الأخيرة:</p>
+                    <p>قدامك صندوقين، الكنز فين؟</p>
+
+                    <details>
+                        <summary>📦 الصندوق الكبير</summary>
+                        <p class="lose">👻 طلعلك شبح! جرب التاني.</p>
+                    </details>
+
+                    <details>
+                        <summary>🎁 الصندوق الصغير</summary>
+                        <p class="win">🏆 مبرووووك! كسبت التاج والكنز! 👑</p>
+                    </details>
+                </details>
+            </details>
+
+            <details>
+                <summary>🚪 الباب الأخضر</summary>
+                <p class="lose">🕸️ الباب مقفول بالخيوط، جرب غيره.</p>
+            </details>
+        </div>
+
+        <hr />
+
+        <!-- اللعبة الثالثة -->
+        <section class="game-three">
+            <h1>💣 اللعبة 3: حقل الألغام</h1>
+            <p>افتح المربعات بحذر، واحد بس فيه الجائزة والباقي قنابل!</p>
+
+            <table>
+                <tr>
+                    <td><details><summary>🟦</summary>💨</details></td>
+                    <td><details><summary>🟦</summary>💥</details></td>
+                    <td><details><summary>🟦</summary>💨</details></td>
+                </tr>
+                <tr>
+                    <td><details><summary>🟦</summary>💥</details></td>
+                    <td><details><summary>🟦</summary>💨</details></td>
+                    <td><details><summary>🟦</summary>💎</details></td>
+                </tr>
+                <tr>
+                    <td><details><summary>🟦</summary>💨</details></td>
+                    <td><details><summary>🟦</summary>💥</details></td>
+                    <td><details><summary>🟦</summary>💥</details></td>
+                </tr>
+                <tr>
+                    <td><details><summary>🟦</summary>💎</details></td>
+                    <td><details><summary>🟦</summary>💨</details></td>
+                    <td><details><summary>🟦</summary>💥</details></td>
+                </tr>
+                <tr>
+                    <td><details><summary>🟦</summary>💥</details></td>
+                    <td><details><summary>🟦</summary>💥</details></td>
+                    <td><details><summary>🟦</summary>💨</details></td>
+                </tr>
+                <tr>
+                    <td><details><summary>🟦</summary>💨</details></td>
+                    <td><details><summary>🟦</summary>💨</details></td>
+                    <td><details><summary>🟦</summary>💥</details></td>
+                </tr>
+                <tr>
+                    <td><details><summary>🟦</summary>💥</details></td>
+                    <td><details><summary>🟦</summary>💎</details></td>
+                    <td><details><summary>🟦</summary>💨</details></td>
+                </tr>
+                <tr>
+                    <td><details><summary>🟦</summary>💨</details></td>
+                    <td><details><summary>🟦</summary>💥</details></td>
+                    <td><details><summary>🟦</summary>💥</details></td>
+                </tr>
+                <tr>
+                    <td><details><summary>🟦</summary>💥</details></td>
+                    <td><details><summary>🟦</summary>💨</details></td>
+                    <td><details><summary>🟦</summary>💨</details></td>
+                </tr>
+            </table>
+        </section>
+
+        <hr />
+
+        <!-- اللعبة الرابعة -->
+        <section class="game-four">
+            <h1>👻 اللعبة 4: اصطاد الشبح السريع</h1>
+            <p>حاول تضغط على الشبح قبل ما يهرب!</p>
+
+            <div class="ghost-arena" style="background-color: black;" >
+                <input type="checkbox" id="catch">
+                <label for="catch" class="ghost" id="w0">👻</label>
+            </div>  
+        </section>
+
+    </details>
+</form>
+<script>
+    
+    document.querySelector("#sun").addEventListener("click", function () {
+      document.body.style.background = "#FEDE57";
+    });
+
+    document.querySelector("#moon").addEventListener("click", function () {
+      document.body.style.background = "#171520";
+
+    });
+document.querySelector("#w0").addEventListener("click", function () {
+  alert('لقد امسكت بيه');
+  document.querySelector('#zz').style.color = 'red';
+  document.querySelector('#zz').style.background = 'black  ';
+  document.querySelector('#m').style.color = '#FFFFFF';
+
+  document.querySelector('#w0').style.color = '#FFFFFF';
+});
+
+
+</script>
+</body>
+</html>

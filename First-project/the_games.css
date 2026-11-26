@@ -1,0 +1,178 @@
+
+    body {
+      font-family: Tahoma, Arial, sans-serif;
+      background-color: #6792ee;
+      color: #222;
+      margin: 0;
+      padding: 20px;
+      text-align: center;
+    }
+
+    /* شريط التنقل المتحرك مع الصفحة */
+    nav {
+      position: sticky;
+      top: 10px;
+      z-index: 100;
+      background-color: #1e3a8a;
+      max-width: 550px;
+      margin: 0 auto 20px auto;
+      padding: 12px;
+      border-radius: 2210px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+    }
+ .sun, .moon {
+  font-size: 80px;
+  text-align: center;
+  animation: float 1s ease-in-out infinite; /* الاسم · المدة · النعومة · كرر للأبد */
+}
+
+@keyframes float {
+  0%, 100% { 
+    transform: translateY(0); /* البداية والنهاية */
+  }
+  50% { 
+    transform: translateY(-14px); /* المنتصف: يرتفع للأعلى */
+  }
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0); }      /* البداية والنهاية */
+  50% { transform: translateY(-14px); }        /* النص: فوق */
+}
+
+
+    nav a {
+      color: #ffffff;
+      text-decoration: 0;
+      margin: 90 10px;
+    }
+
+    nav a:hover {color: #000;
+    }
+
+    /* بطاقة مستقلة لكل لعبة */
+    .game-card {
+      background-color: #ffffff;
+      max-width: 550px;
+      margin: 25px auto;
+      padding: 25px;
+      scroll-margin-top: 70px; /* حتى لا يغطي الناف عنوان اللعبة عند الانتقال */
+    }
+
+    h1 {
+      color: #1e3a8a;
+      font-size: 24px;
+      margin-top: 0;
+    }
+
+    p {
+      color: #444;
+      font-size: 16px;
+      line-height: 1.6;
+    }
+
+    hr {
+      border: none;
+      height: 2px;
+      background-color: #e2e8f0;
+      margin: 15px 0;
+    }
+
+    /* تنسيق الصناديق التفاعلية */
+    details {
+      background-color: #f8fafc;
+      border: 2px solid #cbd5e1;
+      border-radius: 10px;
+      padding: 10px 15px;
+      margin: 10px 0;
+    }
+
+    details:hover {
+      background-color: #eff6ff;
+      border-color: #6792ee;
+    }
+
+    summary {
+      font-size: 17px;
+      font-weight: bold;
+      color: #1e293b;
+      list-style: none;
+    }
+
+    /* تنسيق الجداول للألعاب الشبكية */
+    table {
+      margin: 15px auto;
+      border-collapse: separate;
+      border-spacing: 8px;
+    }
+
+    td {
+      width: 55px;
+      height: 55px;
+      background-color: #f1f5f9;
+      border: 2px solid #94a3b8;
+      border-radius: 8px;
+      font-size: 24px;
+      text-align: center;
+    }
+
+    /* تبسيط شكل details داخل الجدول */
+    td details {
+      border: none;
+      background: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .footer-note {
+      color: #ffffff;
+      font-size: 14px;
+      margin-top: 20px;
+    }
+  
+  
+  
+      .game-card {
+      background-color: #ffffff;
+      max-width: 550px;
+      margin: 25px auto;
+      padding: 25px;
+      border-radius: 15px;
+    }
+
+    /* ساحة اللعب */
+    .arena {
+      position: relative;
+      height: 220px;
+      background-color: #1e293b;
+      border-radius: 12px;
+      overflow: hidden;
+      margin: 15px 0;
+    }
+
+    /* إخفاء مربع الاختيار */
+    input[type="checkbox"] {
+      display: none;
+    }
+
+    /* الشبح المتحرك */
+    .ghost {
+      position: absolute;
+      font-size: 42px;
+      cursor: pointer;
+      user-select: none;
+      animation: moveGhost 1s infinite alternate ease-in-out;
+    }
+
+    @keyframes moveGhost {
+      0%   { top: 15px;  right: 20px; }
+      33%  { top: 140px; right: 120px; }
+      66%  { top: 30px;  right: 320px; }
+      100% { top: 130px; right: 420px; }
+        100% { top: 130px  ;   right: 420px; }
+
+    }
+
+  
+
+  

@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>NEONARCADE  </title>
+  <!-- تم نقل رابط التنسيق إلى المكان الصحيح داخل head -->
+  <link rel="stylesheet" href="./the_games.css">
+</head>
+<body>
+  <!-- شريط التنقل -->
+  <nav>
+    <a href="#game1">🏴‍☠️ الكنز</a>
+    <a href="#game2">🚪 الهروب</a>
+    <a href="#game3">💣 الألغام</a>
+    <a href="#game4">👀 الإيموجي</a>
+    <a href="#game-card">👾 الشبح</a>
+    <a href="./mohef.html">👽لفل الوحش </a>
+
+
+  </nav>
+<div class="sun" id="sun" style="font-size: 90px;">☀️</div>
+<div class="moon" id="moon" style="font-size: 90px;">🌙</div>
+
+<form>  
+  <!-- اللعبة الأولى -->
+  <div id="game1" class="game-card">
+    <h1>🏴‍☠️ 1. لعبة البحث عن الكنز</h1>
+    <p>اضغط على أحد الصناديق أدناه لفتحه واكتشاف أين يختبئ الكنز:</p>
+    <hr />
+    <details>
+      <summary>📦 الصندوق الأول</summary>
+      <p>❌ فارغ! حاول في صندوق آخر.</p>
+    </details>
+    <details>
+      <summary>📦 الصندوق الثاني</summary>
+      <p>🕷️ عنكبوت فقط! ابحث في مكان آخر.</p>
+    </details>
+    <details>
+      <summary>📦 الصندوق الثالث</summary>
+      <p>🎉 <b>مبروك! لقد وجدت الكنز الذهبي 👑💰</b></p>
+    </details>
+    <details>
+      <summary>📦 الصندوق الرابع</summary>
+      <p>🥾 حذاء قديم! ليست هنا.</p>
+    </details>
+  </div>
+
+  <!-- اللعبة الثانية -->
+  <div id="game2" class="game-card">
+    <h1>🚪 2. لعبة الهروب من الغرفة</h1>
+    <p>أنت محبوس داخل غرفة مغلقة.. فتّش في الأماكن التالية للعثور على <b>المفتاح الذهبي</b> والخروج!</p>
+    <hr />
+    <details>
+      <summary>🛏️ تحت الوسادة</summary>
+      <p>📄 وجدت ورقة مكتوب عليها: <i>"المفتاح ليس في الأعلى، ابحث في مكان بارد أو مظلم."</i></p>
+    </details>
+    <details>
+      <summary>🖼️ خلف اللوحة المعلقة</summary>
+      <p>🕸️ لا يوجد شيء هنا سوى خيوط العنكبوت!</p>
+    </details>
+    <details>
+      <summary>🪴 داخل أصيص الزرع</summary>
+      <p>🔑 <b>رائع! لقد وجدت المفتاح الذهبي مدفونًا في التراب!</b> الآن اذهب لفتح الباب.</p>
+    </details>
+    <details>
+      <summary>📚 على رف الكتب</summary>
+      <p>📖 كتاب قديم عن البرمجة بلغة HTML، لا يوجد مفتاح هنا.</p>
+    </details>
+    <details>
+      <summary>🚪 محاولة فتح باب الخروج</summary>
+      <p>❓ هل وجدت المفتاح الذهبي أولاً؟</p>
+      <details>
+        <summary>✅ نعم، معي المفتاح!</summary>
+        <p><b>🎉 مبروك! فتحت الباب وهربت بنجاح! 🏆</b></p>
+      </details>
+      <details>
+        <summary>❌ لا، ما زلت أبحث</summary>
+        <p>🔒 الباب مقفل بإحكام، ارجع وفتش في الغرفة جيدًا.</p>
+      </details>
+    </details>
+  </div>
+
+  <!-- اللعبة الثالثة -->
+  <div id="game3" class="game-card">
+    <h1>💣 3. لعبة كاسحة الألغام</h1>
+    <p>افتح المربعات الآمنة (💎) وتجنب القنابل (💥). حاول جمع <b>5 جواهر</b> دون أن تنفجر!</p>
+    <hr />
+    <table>
+      <tr>
+        <td><details><summary>❓</summary>💎</details></td>
+        <td><details><summary>❓</summary>💥</details></td>
+        <td><details><summary>❓</summary>💎</details></td>
+      </tr>
+      <tr>
+        <td><details><summary>❓</summary>💥</details></td>
+        <td><details><summary>❓</summary>💎</details></td>
+        <td><details><summary>❓</summary>💎</details></td>
+      </tr>
+      <tr>
+        <td><details><summary>❓</summary>💎</details></td>
+        <td><details><summary>❓</summary>💥</details></td>
+        <td><details><summary>❓</summary>👑</details></td>
+      </tr>
+    </table>
+    <p><b>النتيجة:</b> إذا كشفت التاج (👑) و5 جواهر (💎) قبل أن تفتح قنبلة (💥)، فأنت الفائز!</p>
+  </div>
+
+  <!-- اللعبة الرابعة -->
+  <div id="game4" class="game-card">
+    <h1>👀 4. لعبة أوجد الإيموجي المختلف</h1>
+    <p>ابحث عن الوجه المختلف وسط الوجوه المتشابهة واضغط عليه للتحقق:</p>
+    <hr />
+    <table>
+      <tr>
+        <td>😀</td><td>😀</td><td>😀</td><td>😀</td><td>😀</td>
+      </tr>
+      <tr>
+        <td>😀</td><td>😀</td><td>😀</td><td>😀</td><td>😀</td>
+      </tr>
+      <tr>
+        <td>😀</td><td>😀</td>
+        <td>
+          <details>
+            <summary>😃</summary>
+            <small><b>🎉 أحسنت!</b></small>
+          </details>
+        </td>
+        <td>😀</td><td>😀</td>
+      </tr>
+      <tr>
+        <td>😀</td><td>😀</td><td>😀</td><td>😀</td><td>😀</td>
+      </tr>
+    </table>
+  </div>
+
+  <!-- اللعبة الخامسة -->
+  <div class="game-card" id="game-card">
+    <h1   >👻 5. لعبة صيد الشبح السريع</h1>
+    <p  id="m" >اضغط على الشبح وهو يتحرك داخل الظلام لتصطاده!</p>
+    
+    <p style=" color: rgba(0, 0, 0, 0);"  id="zz"   >كسبت </p>
+
+    <input type="checkbox" id="catch" />
+    <div class="arena">
+      <label for="catch" class="ghost" id="w0"  >👻</label>
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <p class="footer-note">لإعادة اللعب في أي لعبة، اضغط على الزر أدناه.</p>
+  <!-- زر أسرع وأنظف لإعادة تحميل الصفحة -->
+
+<input type="submit">
+</form>
+  <script>
+    document.querySelector("#sun").addEventListener("click", function () {
+      document.body.style.background = "#FEDE57";
+    });
+
+    document.querySelector("#moon").addEventListener("click", function () {
+      document.body.style.background = "#171520";
+
+    });
+document.querySelector("#w0").addEventListener("click", function () {
+  alert('لقد امسكت بيه');
+  document.querySelector('#zz').style.color = 'red';
+  document.querySelector('#zz').style.background = 'black  ';
+  document.querySelector('#m').style.color = '#FFFFFF';
+
+  document.querySelector('#w0').style.color = '#FFFFFF';
+});
+
+  </script>
+</body>
+</html>
