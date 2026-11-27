@@ -1,3 +1,5 @@
+
+
 <!DOCTYPE html>
 <head>
     <meta charset="UTF-8">
@@ -6,15 +8,39 @@
     <link rel="stylesheet" href="./css/Support.css">
 </head>
 <body>
+<fieldset style="border: none; padding: 0;"  >
+  <input type="button" popovertarget="box-world" popovertargetaction="show" value="خيارات" style="padding: 8px 16px; cursor: pointer;">
+</fieldset>
 
+<!-- القائمة الجانبية -->
+<div id="box-world" popover style="margin: 0; inset: 0 0 0 auto; width: 320px; max-width: 85vw; height: 100dvh; overflow-y: auto; border: none; padding: 20px; box-sizing: border-box; box-shadow: -4px 0 15px rgba(0,0,0,0.15); background: #fff; font-family: system-ui, sans-serif;">
+  
+  <details open >
+    <summary style="font-weight: bold; font-size: 1.1rem; cursor: pointer; margin-bottom: 12px;">
+      خيارات الدعم الفني
+    </summary>
+    
+    <!-- الأزرار كعناصر input -->
+    <div id="w22" style="display: flex; flex-direction: column; gap: 10px;">
+      <input type="button" value="بطء تحميل الصفحات"   style="width: 100%; padding: 10px; text-align: right; cursor: pointer; border: 1px solid #ddd; border-radius: 6px; background: #f9f9f9; white-space: normal; background-color: #303030;  color: white; " class="ss" >
+      
+      <input type="button" value="عدم توافق الصفحات مع مختلف الشاشات" style="width: 100%; padding: 10px; text-align: right; cursor: pointer; border: 1px solid #ddd; border-radius: 6px; background: #f9f9f9; white-space: normal; background-color: #303030;  color: white;   " class="ss" >
+      
+      <input type="button" value="الروابط المعطلة التي تضر بتجربة الزائر وترتيب البحث." style="width: 100%; padding: 10px; text-align: right; cursor: pointer; border: 1px solid border-radius: 6px;  background-color: #303030;  color: white; "  class="ss"  >
+    <img   src="https://storage.googleapis.com/support-forums-api/attachment/thread-192265237-8262383179895062804.PNG" alt="">
+      <input type="button" value="بيزهر رقم 404" style="width: 100%; padding: 10px; text-align: right; cursor: pointer; border: 1px solid #ddd; border-radius: 6px; background: #f9f9f9; white-space: normal; background-color: #303030;  color: white;   " class="ss" >   >
+    </div>
+
+    <div id="gg" class="content-wrapper" style="margin-top: 15px;">
+      <div class="sliders-list"></div>
+      <div class="stage"></div>
+    </div>
+  </details>
+
+</div>
 
     <div class="agents">
-
-        
-
-
-
-        <div class="agent-card">
+                <div class="agent-card">
             <img style="    border-radius: 333px;
 "  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSOrfhipP96SLpcbAqNfuP8wNd_59ySSvC4ALHj7yHvUQ&s=10" width="100"  alt="">
             <h4>ابراهيم  موسي</h4>
@@ -60,8 +86,8 @@
        
             <span class="status">متصل</span>
             <p>متاح في اي وقت</p>
-    <audio src="https://assets.mixkit.co/active_storage/sfx/2869/2869-preview.mp3 " autoplay       controls id="rulesAudio" style=" width: 0;   display: block; margin: 20px auto;">متصفحك لا يدعم تشغيل الصوت</audio>
-         
+    <audio src="https://assets.mixkit.co/active_storage/sfx/    2869/2869-preview.mp3 " autoplay       controls id="rulesAudio" style=" width: 0;   display: block; margin: 20px auto;">متصفحك لا يدعم تشغيل الصوت</audio>
+            
         </div>
 
         <!-- تم إدخال بطاقة محمد علي داخل حاوية agents -->
@@ -85,9 +111,6 @@
 
 
 
-
-
-
 <button type="button" >اضغط للكتابة </button>
 <a href="./index.html"><button id="button" type="button" style="background-color:#0f0f0f00 ; color: #0f0f0f00;  " >خروج</button></a>
 
@@ -99,7 +122,7 @@
 <script>
 alert('حد في الدعم الفني فاضي')
 
-document.querySelector("button").addEventListener("click", function () {
+    document.querySelector("button").addEventListener("click", function () {
     document.querySelector("h3").style.color = "#040B1A"; 
     document.querySelector("#e3").style.color = "#040B1A"; 
 });
@@ -119,7 +142,6 @@ document.querySelector("button").addEventListener("click", function () {
     }
     
 
-
     if (m ===''){
         alert("اكتب بجد")
         alert("روح افتحو تاني ")
@@ -131,7 +153,9 @@ document.querySelector("button").addEventListener("click", function () {
 
 alert(m +"  سنعمل على تحسينه ");
 });
-
+document.querySelector("#w22").addEventListener("click", function () {
+alert("سنعمل علي ططوير الموقع")
+});
 </script>
 
 </body>

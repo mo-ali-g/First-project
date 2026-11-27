@@ -62,8 +62,34 @@ button:hover {
 
 
 @media (max-width: 768px) {
-  * {
-    flex-direction:column;
-    gap: 1px;
+  .agent-card {
+    display: none;
   }
 }
+
+
+
+
+
+
+
+
+
+  dialog#box-world {
+    padding: 0;
+    border: none;
+    max-height: 100vh;
+    margin: 0 0 0  auto ; 
+    height: 100vh;
+  }
+
+
+  
+  .stage {
+    width: 250px;
+    background: #f4f4f4;
+  }
+
+
+
+
